@@ -23,13 +23,10 @@ class TodayPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Padding(
-                      padding: EdgeInsets.only(top: 16.0),
-                      child: ShadowText(
+                      padding: EdgeInsets.all( 0.0),
+                      child: Text(
                         'TODAY',
-                        shadowColor: Colors.black.withOpacity(0.15),
-                        offsetX: 3.0,
-                        offsetY: 3.0,
-                        blur: 3.0,
+
                         style: TextStyle(
                             color: const Color(0xBEffffff),
                             fontSize: 24.0,
@@ -38,7 +35,19 @@ class TodayPage extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(vertical: 24.0),
+                      padding: EdgeInsets.only(top: 3.0),
+                      child: Text(
+                        'Last 3 drinks',
+
+                        style: TextStyle(
+                            color: const Color(0xbee0dcdc),
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(8),
                       child: _TodayHistory(),
                     ),
                     Expanded(
@@ -101,7 +110,7 @@ class _TodayHistory extends StatelessWidget {
                 historyText;
             i++;
 
-            if (i < 3) {
+            if (i <3) {
               historyText = '\n' + historyText;
             } else {
               break;
@@ -115,17 +124,14 @@ class _TodayHistory extends StatelessWidget {
           }
         }
 
-        return ShadowText(
+        return Text(
           historyText,
-          shadowColor: Colors.black.withOpacity(0.15),
-          offsetX: 3.0,
-          offsetY: 3.0,
-          blur: 3.0,
+
           textAlign: TextAlign.center,
           style: TextStyle(
               color: Colors.white,
               fontSize: 16.0,
-              fontWeight: FontWeight.normal),
+              fontWeight: FontWeight.w500),
         );
       },
     );

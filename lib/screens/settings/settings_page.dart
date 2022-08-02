@@ -53,12 +53,9 @@ class _SettingsPageState extends State<SettingsPage> {
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.only(top: 16.0),
-                    child: ShadowText(
+                    child: Text(
                       'SETTINGS',
-                      shadowColor: Colors.black.withOpacity(0.15),
-                      offsetX: 3.0,
-                      offsetY: 3.0,
-                      blur: 3.0,
+
                       style: TextStyle(
                           color: const Color(0xBEffffff),
                           fontSize: 24.0,

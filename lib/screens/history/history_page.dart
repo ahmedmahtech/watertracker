@@ -263,7 +263,7 @@ class HistoryStatsText extends StatelessWidget {
           textAlign: TextAlign.left,
           style: TextStyle(
               color: const Color(0xFF7f8ca1),
-              fontSize: 18.0,
+              fontSize: 20.0,
               fontWeight: FontWeight.w400))
     ];
 
@@ -272,7 +272,7 @@ class HistoryStatsText extends StatelessWidget {
           textAlign: TextAlign.left,
           style: TextStyle(
               color: const Color(0xFF7f8ca1),
-              fontSize: 14.0,
+              fontSize: 16.0,
               fontWeight: FontWeight.w300)));
     }
 

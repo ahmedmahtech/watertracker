@@ -198,7 +198,7 @@ class IconBubble extends StatelessWidget {
 
           text,
 
-          style: TextStyle(color: textColor,fontSize:20, fontWeight: FontWeight.normal),
+          style: TextStyle(color: textColor,fontSize:17, fontWeight: FontWeight.w700),
         )),
       ),
     );
